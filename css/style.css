@@ -1,0 +1,94 @@
+/* FONTS */
+@font-face {
+    font-family: "flood_waternormal";
+    src: url("../font/floodwater-normal-webfont.woff2") format("woff2"),
+         url("../font/floodwater-normal-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ELEMENTS */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+    
+h1  {
+    font-family: "flood_waternormal", Arial, Helvetica, sans-serif;
+    color: #0047E0;
+    font-size: 5em;
+}
+
+/* HEADER */
+header {
+    position: sticky;
+    display: flex;
+    top: 0;
+    height: 60px;
+    background-color: #DDD;
+}
+
+header img {
+    display: block;
+    height: 60px;
+    width: 60px;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding-left: 0;
+    width: calc(100vw - 60px);
+}
+
+header nav ul li
+{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #0047E0;
+    cursor: pointer;
+}
+
+header nav ul li:hover
+{
+    background-color: #0047E0;
+}
+
+header nav ul li:hover a {
+    color: #FFF;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #0047E0;
+}
+
+/* NAVIGATION */
+body > nav {
+    position : fixed;
+    right: 0;
+    background-color: #0047E0;
+    height: calc(100vh - 60px);
+}
+
+/* BUTTONS */
+.button {
+
+    display : block;
+    background-color: #0047E0;
+    color: #FFF;
+    padding: 1em 2em;
+    text-decoration: none;
+    width: fit-content;
+    border-radius: 0.2em;
+}
