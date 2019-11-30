@@ -22,7 +22,6 @@ h1  {
 /* HEADER */
 header {
     position: sticky;
-    display: flex;
     top: 0;
     height: 60px;
     background-color: #DDD;
@@ -36,6 +35,7 @@ header img {
 
 header nav {
     display: flex;
+    height: 60px;
 }
 
 header nav ul {
@@ -59,18 +59,50 @@ header nav ul li
     cursor: pointer;
 }
 
-header nav ul li:hover
+header nav ul li:hover, header nav ul li.displayed
 {
     background-color: #0047E0;
 }
 
-header nav ul li:hover a {
+header nav ul li:hover a, header nav ul li.displayed a {
     color: #FFF;
 }
 
 header nav ul li a {
     text-decoration: none;
     color: #0047E0;
+}
+
+/* HEADER SOUS-MENU */
+header div {
+    display: none;
+    justify-content: space-between;
+    background: #0047E0;
+}
+
+header div.displayed {
+    display: flex;
+}
+
+header div ul li {
+    list-style: none;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+header div ul li ul li {
+    font-size: 0.7em;
+}
+
+header div a {
+    color: #FFF;
+}
+
+header div div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
 }
 
 /* NAVIGATION */
