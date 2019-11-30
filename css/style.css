@@ -21,10 +21,11 @@ h1  {
 
 /* HEADER */
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
     height: 60px;
     background-color: #DDD;
+    z-index: 10;
 }
 
 header img {
@@ -77,7 +78,7 @@ header nav ul li a {
 header div {
     display: none;
     justify-content: space-between;
-    background: #0047E0;
+    background-color: #0047E0;
 }
 
 header div.displayed {
@@ -123,4 +124,11 @@ body > nav {
     text-decoration: none;
     width: fit-content;
     border-radius: 0.2em;
+}
+
+/* MAIN */
+main {
+    position: absolute;
+    top: 60px;
+    margin-top: 10px;
 }
