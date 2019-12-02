@@ -28,7 +28,7 @@ header {
     z-index: 10;
 }
 
-header img {
+header nav img {
     display: block;
     height: 60px;
     width: 60px;
@@ -51,11 +51,8 @@ header nav ul {
 
 header nav ul li
 {
-    display: flex;
     height: 60px;
     width: 100%;
-    justify-content: center;
-    align-items: center;
     border-left: 1px solid #0047E0;
     cursor: pointer;
 }
@@ -70,6 +67,11 @@ header nav ul li:hover a, header nav ul li.displayed a {
 }
 
 header nav ul li a {
+	display: block;
+	height: 60px;
+	line-height: 60px;
+	flex-basis: 100%;
+	text-align: center;
     text-decoration: none;
     color: #0047E0;
 }
@@ -85,6 +87,10 @@ header div.displayed {
     display: flex;
 }
 
+header div ul {
+	flex-basis: 50%;
+}
+
 header div ul li {
     list-style: none;
     font-size: 1.5em;
@@ -97,13 +103,22 @@ header div ul li ul li {
 
 header div a {
     color: #FFF;
+	text-decoration: none;
 }
 
 header div div {
     display: flex;
+	flex-basis: 50%;
+	padding: 30px;
     justify-content: center;
     align-items: center;
     margin-right: 50px;
+}
+
+header div div img {
+	display: block;
+	width: 100%;
+	height: auto;
 }
 
 /* NAVIGATION */
