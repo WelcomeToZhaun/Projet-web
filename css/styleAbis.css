@@ -1,0 +1,43 @@
+main{
+    display:flex;
+    flex-direction: column;
+}
+nav{
+    width: 100%;
+    display:inline-flex;
+    align-self: center;
+    align-content: center;
+}
+figure{
+    display:flex;
+    flex-direction: column;
+}
+article{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width:50%;
+    justify-content: space-around;
+}
+figcaption{
+    align-self: center;
+}
+img{
+    flex-basis: 25%;
+
+}
+.line{
+    border-width:medium;
+    border-style: solid;
+    border-color: black;
+}
+main div{
+    display: inline-flex;
+}
+footer div{
+    width:100%;
+    display: inline-flex;
+}
+footer div h2{
+    font-size: 2em;
+}
