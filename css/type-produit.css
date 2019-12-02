@@ -1,52 +1,65 @@
-main 
-{ 
+main { 
     
     
 }
 
-div > nav
-{ 
+div > nav { 
     background-color: #203EDD;
     min-height: calc(100vh - 60px);
 }
-.navig 
-{
+main > div > nav { 
+    background-color: white;
+    min-height: 0;
+    margin-top: 50px;
+}
+.navig {
     padding: 0;
     
 }
-div > nav > h3
-{
+div > nav > h3 {
     color: white;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-div > nav > p
-{
+div > nav > p {
     color: white;
 }
 
-.container-fluid 
-{
+.container-fluid {
     padding-right: 0;
     
 }
 
-div > nav > ul li 
-{
+div > nav > ul li {
     list-style-type: none;
     margin-top: 40px;
     text-align: left;
 }
-div > nav > ul li a
-{
+div > nav > ul li a {
     text-decoration: none;
     color: white;
     font-size: 16px;
 }
-div > nav > ul
-{
+div > nav > ul {
     padding-left: 10px;
 }
 .row {
     margin-right: 0;
+}
+aside {
+    background-color: #203EDD;
+    margin-top: 30px;
+    margin-left: 20px;
+    border-radius: 25px;
+    color: white;
+
+}
+aside p {
+    margin-top: 40px;
+    font-size: 18px;
+
+}
+article {
+    border: solid blue;
+    margin-top: 25px;
 }
