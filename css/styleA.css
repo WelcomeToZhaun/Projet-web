@@ -1,0 +1,18 @@
+figure{
+    width: 20%;
+    padding:2em;
+    align-self:center;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+}
+nav{
+    align-self: center;
+}
+body{
+    
+}
+main{
+    display: inline-flex;
+}
