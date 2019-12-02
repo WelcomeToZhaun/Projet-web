@@ -1,0 +1,28 @@
+main{
+    display:flex;
+    flex-direction: column;
+}
+nav{
+    width: 100%;
+    display:inline-flex;
+    align-self: center;
+    align-content: center;
+}
+figure{
+    display:flex;
+    flex-direction: column;
+}
+article{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width:50%;
+    justify-content: space-around;
+}
+figcaption{
+    align-self: center;
+}
+img{
+    flex-basis: 25%;
+
+}
