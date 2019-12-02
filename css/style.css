@@ -142,8 +142,7 @@ body > nav {
 }
 
 /* MAIN */
-main {
+.principale {
     position: absolute;
     top: 60px;
-    margin-top: 10px;
 }
