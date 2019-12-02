@@ -1,6 +1,6 @@
 /* FONTS */
 @font-face {
-    font-family: "flood_waternormal";
+    font-family: "flood-water";
     src: url("../font/floodwater-normal-webfont.woff2") format("woff2"),
          url("../font/floodwater-normal-webfont.woff") format("woff");
     font-weight: normal;
@@ -14,7 +14,7 @@ body {
 }
     
 h1  {
-    font-family: "flood_waternormal", Arial, Helvetica, sans-serif;
+    font-family: "flood-water", Arial, Helvetica, sans-serif;
     color: #0047E0;
     font-size: 5em;
 }
@@ -53,13 +53,13 @@ header nav ul li
 {
     height: 60px;
     width: 100%;
-    border-left: 1px solid #0047E0;
+    border-left: 1px solid #203EDD;
     cursor: pointer;
 }
 
 header nav ul li:hover, header nav ul li.displayed
 {
-    background-color: #0047E0;
+    background-color: #203EDD;
 }
 
 header nav ul li:hover a, header nav ul li.displayed a {
@@ -73,14 +73,14 @@ header nav ul li a {
 	flex-basis: 100%;
 	text-align: center;
     text-decoration: none;
-    color: #0047E0;
+    color: #203EDD;
 }
 
 /* HEADER SOUS-MENU */
 header div {
     display: none;
     justify-content: space-between;
-    background-color: #0047E0;
+    background-color: #203EDD;
 }
 
 header div.displayed {
@@ -125,7 +125,7 @@ header div div img {
 body > nav {
     position : fixed;
     right: 0;
-    background-color: #0047E0;
+    background-color: #203EDD;
     height: calc(100vh - 60px);
 }
 
@@ -133,7 +133,7 @@ body > nav {
 .button {
 
     display : block;
-    background-color: #0047E0;
+    background-color: #203EDD;
     color: #FFF;
     padding: 1em 2em;
     text-decoration: none;
