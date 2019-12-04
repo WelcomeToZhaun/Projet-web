@@ -84,11 +84,85 @@ div > p {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    margin-top: -140px;
+    margin-top: -120px;
 
 }
+
+
 
 .devis {
     position: relative;
     top: 50px;
+}
+
+@media only screen and (max-width: 1150px) {
+    div > p {
+        top: 20px;
+    }
+    div > h2 {
+        bottom: 15px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .menumobile {
+        display: none;
+    }
+    .imagepiscine {
+        display: none;
+    }
+}
+
+/* version tablette */
+@media only screen and (max-width: 1000px) {
+    main + nav {
+        display: none;
+    }
+    .menumobile > ul li {
+    list-style-type: none;
+    margin-top: 20px;
+    text-align: left;
+    }
+    .menumobile > ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+    }
+    .menumobile > ul {
+        padding-left: 10px;
+    }
+    .menumobile {
+        border: none;
+    }
+    article h3 {
+        color: white;
+    }
+    .menumobile {
+        background-color: #203EDD;
+        margin-top: 30px;
+        
+        border-radius: 25px;
+        color: white;
+    }
+    div > img {
+        min-width: 200px;
+    }
+    .imagepiscinedesk {
+        display: none;
+    }
+
+}
+
+/* version mobile */
+@media only screen and (max-width: 810px) {
+    
+    
+
+}
+@media only screen and (max-width: 576px) {
+
+    header nav {
+        display: none;
+    }
+
 }
