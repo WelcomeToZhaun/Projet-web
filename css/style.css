@@ -171,9 +171,26 @@ header nav img {
 /* NAVIGATION */
 body > nav {
     position : fixed;
+    top: 60px;
     right: 0;
+    width: 300px;
     background-color: var(--dark-blue);
     height: calc(100vh - 60px);
+    padding: 15px;
+}
+
+body > nav a {
+    color: #FFF;
+}
+
+body > nav h3 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+body > nav ul {
+    list-style: none;
+    padding-left: 20px;
 }
 
 /* BUTTONS */
