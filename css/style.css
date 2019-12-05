@@ -151,11 +151,11 @@ header nav p {
     color: var(--dark-blue);
 }
 
-header nav img {
-    margin-right: 15px;
+header nav a:last-of-type img {
+    margin-right: 5px;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
     header nav p, header nav > a:last-child
     {
@@ -193,9 +193,13 @@ body > nav ul {
     padding-left: 20px;
 }
 
+@media screen and (max-width: 992px) {
+    body > nav {
+        display: none;
+    }
+}
 /* BUTTONS */
 .button {
-
     display : block;
     background-color: var(--dark-blue);
     color: #FFF;
@@ -210,7 +214,15 @@ body > nav ul {
 }
 
 /* MAIN */
-.principale {
+main.container-fluid {
     position: absolute;
     top: 60px;
+    width: calc(100vw - 300px);
+}
+
+@media screen and (max-width: 992px)
+{
+    main.container-fluid {
+        width: 100vw;
+    }
 }
