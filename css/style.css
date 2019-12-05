@@ -2,7 +2,7 @@
 :root {
     --dark-blue: #203EDD;
     --light-blue: #4DB3AA;
-    --grey: #9F9F9F;
+    --grey: #DDD;
 }
 
 /* FONTS */
@@ -73,6 +73,12 @@ header nav ul li:hover, header nav ul li.displayed
 
 header nav ul li:hover a, header nav ul li.displayed a {
     color: #FFF;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #FFF;
+    text-decoration: none;
 }
 
 header nav ul li a {
