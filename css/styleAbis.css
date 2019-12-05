@@ -9,6 +9,7 @@
     position: relative;
     width: 100%;
     text-align: center;
+    color:  #203EDD;
 }
 
 main{
@@ -33,7 +34,14 @@ article{
     justify-content: space-around;
 }
 figcaption{
-    align-self: center;
+   text-align: center;
+   color: #203EDD  ;
+}
+
+a:hover img{
+    background-image: url(/img/logo.jpg);
+    background-position: 0px -225px;
+    background-repeat: no-repeat;
 }
 
 .line{
