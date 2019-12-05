@@ -1,6 +1,8 @@
 /* COLOR */
 :root {
-    --dark-blue: #
+    --dark-blue: #203EDD;
+    --light-blue: #4DB3AA;
+    --grey: #9F9F9F;
 }
 
 /* FONTS */
@@ -20,7 +22,7 @@ body {
     
 h1  {
     font-family: "flood-water", Arial, Helvetica, sans-serif;
-    color: #0047E0;
+    color: var(--dark-blue);
     font-size: 5em;
 }
 
@@ -29,7 +31,7 @@ header {
     position: fixed;
     top: 0;
     height: 60px;
-    background-color: #DDD;
+    background-color: var(--grey);
     z-index: 10;
     width: 100vw;
 }
@@ -60,13 +62,13 @@ header nav ul li
 {
     height: 60px;
     width: 100%;
-    border-left: 1px solid #203EDD;
+    border-left: 1px solid var(--dark-blue);
     cursor: pointer;
 }
 
 header nav ul li:hover, header nav ul li.displayed
 {
-    background-color: #203EDD;
+    background-color: var(--dark-blue);
 }
 
 header nav ul li:hover a, header nav ul li.displayed a {
@@ -80,14 +82,14 @@ header nav ul li a {
 	flex-basis: 100%;
 	text-align: center;
     text-decoration: none;
-    color: #203EDD;
+    color: var(--dark-blue);
 }
 
 /* HEADER SOUS-MENU */
 header div {
     display: none;
     justify-content: space-between;
-    background-color: #203EDD;
+    background-color: var(--dark-blue);
 }
 
 header div.displayed {
@@ -140,7 +142,7 @@ header nav p {
     line-height: 60px;
     margin: 0;
     font-size: 1.5em;
-    color: #0047E0;
+    color: var(--dark-blue);
 }
 
 @media only screen and (max-width: 576px) {
@@ -160,7 +162,7 @@ header nav p {
 body > nav {
     position : fixed;
     right: 0;
-    background-color: #203EDD;
+    background-color: var(--dark-blue);
     height: calc(100vh - 60px);
 }
 
@@ -168,7 +170,7 @@ body > nav {
 .button {
 
     display : block;
-    background-color: #203EDD;
+    background-color: var(--dark-blue);
     color: #FFF;
     padding: 1em 2em;
     text-decoration: none;
