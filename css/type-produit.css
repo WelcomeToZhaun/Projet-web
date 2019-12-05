@@ -117,6 +117,11 @@ article {
     }
 }
 
+@media only screen and (min-width: 1000px) and (max-width: 1125px){
+    article > div > p {
+        font-size: 1.1em;
+    }
+}
 /* version tablette */
 @media only screen and (max-width: 1000px) {
     main + nav {
@@ -161,6 +166,9 @@ article {
     article div {
         justify-content: center;
         align-items: center;
+    }
+    .button {
+
     }
 
 }
