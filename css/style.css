@@ -2,7 +2,7 @@
 :root {
     --dark-blue: #203EDD;
     --light-blue: #4DB3AA;
-    --grey: #9F9F9F;
+    --grey: #DDD;
 }
 
 /* FONTS */
@@ -73,6 +73,12 @@ header nav ul li:hover, header nav ul li.displayed
 
 header nav ul li:hover a, header nav ul li.displayed a {
     color: #FFF;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #FFF;
+    text-decoration: none;
 }
 
 header nav ul li a {
@@ -145,6 +151,10 @@ header nav p {
     color: var(--dark-blue);
 }
 
+header nav img {
+    margin-right: 15px;
+}
+
 @media only screen and (max-width: 768px) {
 
     header nav p, header nav > a:last-child
@@ -161,9 +171,26 @@ header nav p {
 /* NAVIGATION */
 body > nav {
     position : fixed;
+    top: 60px;
     right: 0;
+    width: 300px;
     background-color: var(--dark-blue);
     height: calc(100vh - 60px);
+    padding: 15px;
+}
+
+body > nav a {
+    color: #FFF;
+}
+
+body > nav h3 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+body > nav ul {
+    list-style: none;
+    padding-left: 20px;
 }
 
 /* BUTTONS */
@@ -179,6 +206,7 @@ body > nav {
 }
 .button:hover {
     box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.55);
+    color: white;
 }
 
 /* MAIN */

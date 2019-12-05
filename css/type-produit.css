@@ -69,19 +69,28 @@ article {
 
 article div {
     display: flex;
+}
+
+article div:nth-child(2) {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     flex: 1;
-    
-
 }
 
-h2, div > p {
+div > h2, div > p {
     color: #203EDD;
+    font-size: 1.5em;
 
+}
+div > h2 {
+    font-size: 2em;
 }
 h3 {
-    margin-top: 15px;
+    margin-top: 1.5em;
+}
+aside > h2 {
+    padding-top: 15px;
 }
 
 .devis {
@@ -108,6 +117,11 @@ article {
     }
 }
 
+@media only screen and (min-width: 1000px) and (max-width: 1125px){
+    article > div > p {
+        font-size: 1.1em;
+    }
+}
 /* version tablette */
 @media only screen and (max-width: 1000px) {
     main + nav {
@@ -143,5 +157,18 @@ article {
         min-width: 200px;
     }
     
+    article {
+        flex-direction: column;
+    }
+    article div img {
+        display: block;
+    }
+    article div {
+        justify-content: center;
+        align-items: center;
+    }
+    .button {
+
+    }
 
 }
