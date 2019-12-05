@@ -1,3 +1,8 @@
+/* COLOR */
+:root {
+    --dark-blue: #
+}
+
 /* FONTS */
 @font-face {
     font-family: "flood-water";
@@ -26,6 +31,7 @@ header {
     height: 60px;
     background-color: #DDD;
     z-index: 10;
+    width: 100vw;
 }
 
 header nav img {
@@ -47,6 +53,7 @@ header nav ul {
     width: 100%;
     padding-left: 0;
     width: calc(100vw - 60px);
+    margin: 0;
 }
 
 header nav ul li
@@ -119,6 +126,34 @@ header div div img {
 	display: block;
 	width: 100%;
 	height: auto;
+}
+
+/* MOBILE */
+header nav p, header nav > a:last-child
+{
+    display: none;
+}
+
+header nav p {
+    flex-basis: 100%;
+    text-align: center;
+    line-height: 60px;
+    margin: 0;
+    font-size: 1.5em;
+    color: #0047E0;
+}
+
+@media only screen and (max-width: 576px) {
+
+    header nav p, header nav > a:last-child
+    {
+        display: block;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
 }
 
 /* NAVIGATION */

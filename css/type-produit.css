@@ -152,17 +152,3 @@ div > p {
     }
 
 }
-
-/* version mobile */
-@media only screen and (max-width: 810px) {
-    
-    
-
-}
-@media only screen and (max-width: 576px) {
-
-    header nav {
-        display: none;
-    }
-
-}
