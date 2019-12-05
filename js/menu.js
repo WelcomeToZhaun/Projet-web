@@ -1,4 +1,4 @@
-
+// Menu horizontal
 $("header nav ul li, header > div").hover((e) =>
 {
     // Affichage du sous-menu
@@ -24,5 +24,22 @@ $("header nav ul li, header > div").hover((e) =>
     {
         $(".sous" + e.currentTarget.classList[0]).removeClass("displayed");
         $("." + e.currentTarget.classList[0]).removeClass("displayed");
+    }
+})
+
+let open = false;
+
+// Menu vertical
+$("header nav a:last-child").click((e) =>
+{
+    if (open)
+    {
+        $("body > nav").addClass("displayed");
+        open = false;
+    }
+    else
+    {
+        $("body > nav").removeClass("displayed");
+        open = true;
     }
 })
