@@ -151,6 +151,10 @@ header nav p {
     color: var(--dark-blue);
 }
 
+header nav img {
+    margin-right: 15px;
+}
+
 @media only screen and (max-width: 768px) {
 
     header nav p, header nav > a:last-child
