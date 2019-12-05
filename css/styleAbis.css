@@ -1,3 +1,15 @@
+.top{
+    display: flex;
+}
+
+.top img{
+    position: absolute  ;
+}
+.top h1{
+    position: relative;
+    left: 50%;
+}
+
 main{
     display:flex;
     flex-direction: column;
@@ -22,10 +34,7 @@ article{
 figcaption{
     align-self: center;
 }
-img{
-    flex-basis: 25%;
 
-}
 .line{
     border-width:medium;
     border-style: solid;
@@ -40,4 +49,12 @@ footer div{
 }
 footer div h2{
     font-size: 2em;
+}
+
+.carousel-item{
+    height: 400px;
+}
+
+.carousel-item img{
+    height: 400px;
 }
