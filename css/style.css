@@ -8,10 +8,6 @@
 }
 
 /* ELEMENTS */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-}
     
 h1  {
     font-family: "flood-water", Arial, Helvetica, sans-serif;
@@ -179,17 +175,29 @@ body > nav {
     width: 300px;
     background-color: #203EDD;
     height: calc(100vh - 60px);
-    padding: 15px;
     z-index: 2;
+    overflow: scroll;
+    padding-bottom: 20px;
+}
+
+body > nav > div {
+    padding: 10px 15px 2px 15px;
 }
 
 body > nav a {
     color: #FFF;
 }
 
+body > nav h3, body > nav h4{
+    font-size: 1.2em;
+}
+
+body > nav h3, body > nav h4, body > nav a  {
+    margin: 2px 0;
+}
+
 body > nav h3 {
     text-transform: uppercase;
-    font-size: 1.2em;
 }
 
 body > nav ul {
@@ -205,6 +213,14 @@ body > nav ul {
     body > nav.displayed {
         display: block;
     }
+}
+
+body > nav div.selected {
+    background: #00E6FF;
+}
+
+body > nav div.selected a {
+    color: #203EDD;
 }
 
 /* BUTTONS */

@@ -34,12 +34,12 @@ $("header nav a:last-child").click((e) =>
 {
     if (open)
     {
-        $("body > nav").addClass("displayed");
+        $("body > nav").removeClass("displayed");
         open = false;
     }
     else
     {
-        $("body > nav").removeClass("displayed");
+        $("body > nav").addClass("displayed");
         open = true;
     }
 })

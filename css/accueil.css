@@ -1,6 +1,6 @@
 /* HEADER */
 .top img {
-    position: absolute ;
+    position: absolute;
 }
 
 .top h1 {
@@ -20,6 +20,7 @@ main > div {
     border-width:medium;
     border-style: solid;
     border-color: black;
+    flex: 1;
 }
 
 /* NAVIGATION */
@@ -30,19 +31,6 @@ nav {
     align-content: center;
 }
 
-figure {
-    display:flex;
-    flex-direction: column;
-}
-
-article {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width:50%;
-    justify-content: space-around;
-}
-
 figcaption {
    text-align: center;
    color: #203EDD  ;
@@ -50,65 +38,10 @@ figcaption {
 
 /* FOOTER */
 footer div {
+    display: flex;
     width: 100%;
 }
 
-/* TAILLE TABLETTE */
-@media screen and (max-width: 765px) 
-{
-    .carousel-item {
-        height: 150px;
-    }
-
-    .carousel-item img {
-        height: 150px;
-    }
-
-    footer .carousel-item {
-        height: 300px;
-    }
-
-    .carousel-item img {
-        height: 300px;
-    }
-}
-
-/* TAILLE TABLETTE */
-@media screen and (max-width: 1000px)
-{
-    .carousel-item {
-        height: 300px;
-    }
-
-    .carousel-item img {
-        height: 300px;
-    }
-
-    footer .carousel-item {
-        height: 600px;
-    }
-
-    .carousel-item img {
-        height: 600px;
-    }
-}
-
-/* TAILLE PC */
-@media screen and (min-width: 1000px)
-{
-    .carousel-item {
-        height: 400px;
-    }
-
-    .carousel-item img {
-        height: 400px;
-    }
-
-    footer .carousel-item {
-        height: 800px;
-    }
-
-    .carousel-item img {
-        height: 800px;
-    }
+footer {
+    padding-bottom: 20px;
 }
