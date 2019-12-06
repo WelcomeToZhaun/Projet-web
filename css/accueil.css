@@ -26,9 +26,9 @@ main > div {
 /* NAVIGATION */
 nav {
     width: 100%;
-    display:inline-flex;
     align-self: center;
     align-content: center;
+    align-items: center;
 }
 
 figcaption {
