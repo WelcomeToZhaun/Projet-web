@@ -47,6 +47,7 @@ aside {
     background-color: #203EDD;
     margin-top: 30px;
     margin-left: 20px;
+    margin-right: 20px;
     border-radius: 25px;
     color: white;
 
@@ -97,8 +98,11 @@ article {
     display: flex;
 }
 
-li a:hover {
+li a:hover, h3 a:hover {
     color: #00E6FF;
+}
+article {
+    margin-right: 15px;
 }
 
 @media only screen and (max-width: 1150px) {
