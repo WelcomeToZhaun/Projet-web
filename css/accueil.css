@@ -45,3 +45,21 @@ footer div {
 footer {
     padding-bottom: 20px;
 }
+
+.image:hover {
+    /* Les images sont grossies de 10% */
+    -webkit-transform:scale(1.1); /* Safari et Chrome */
+    -moz-transform:scale(1.1); /* Firefox */
+    -ms-transform:scale(1.1); /* Internet Explorer 9 */
+    -o-transform:scale(1.1); /* Opera */
+    transform:scale(1.1);
+    }
+
+    .image1:hover {
+        /* L'image QUI SOMMES-NOUS ? est gorssis de 5% ( pour ne pas cahcher le texte du dessus */
+        -webkit-transform:scale(1.05); /* Safari et Chrome */
+        -moz-transform:scale(1.05); /* Firefox */
+        -ms-transform:scale(1.05); /* Internet Explorer 9 */
+        -o-transform:scale(1.05); /* Opera */
+        transform:scale(1.05);
+        }
