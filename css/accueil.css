@@ -10,12 +10,6 @@
 }
 
 /* SÉPARATION DE LIGNES */
-main > div {
-    width: 100%;
-    display: inline-flex;
-
-}
-
 .line {
     border-width:medium;
     border-style: solid;
@@ -24,16 +18,31 @@ main > div {
 }
 
 /* NAVIGATION */
-nav {
+nav a {
+    display: block;
+}
+
+figure div {
     width: 100%;
-    align-self: center;
-    align-content: center;
-    align-items: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s;
 }
 
 figcaption {
    text-align: center;
-   color: #203EDD  ;
+   color: #203EDD;
+}
+
+figure .zoom-image {
+    overflow: hidden;
+}
+
+figure:hover .zoom-image img {
+    transform: scale(1.1);
 }
 
 /* FOOTER */
@@ -45,21 +54,3 @@ footer div {
 footer {
     padding-bottom: 20px;
 }
-
-.image:hover {
-    /* Les images sont grossies de 10% */
-    -webkit-transform:scale(1.1); /* Safari et Chrome */
-    -moz-transform:scale(1.1); /* Firefox */
-    -ms-transform:scale(1.1); /* Internet Explorer 9 */
-    -o-transform:scale(1.1); /* Opera */
-    transform:scale(1.1);
-    }
-
-    .image1:hover {
-        /* L'image QUI SOMMES-NOUS ? est gorssis de 5% ( pour ne pas cahcher le texte du dessus */
-        -webkit-transform:scale(1.05); /* Safari et Chrome */
-        -moz-transform:scale(1.05); /* Firefox */
-        -ms-transform:scale(1.05); /* Internet Explorer 9 */
-        -o-transform:scale(1.05); /* Opera */
-        transform:scale(1.05);
-        }
