@@ -105,6 +105,10 @@ article {
     margin-right: 15px;
 }
 
+article div  p {
+    text-align: center;
+}
+
 @media only screen and (max-width: 1150px) {
     div > p {
         top: 20px;
