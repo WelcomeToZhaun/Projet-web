@@ -232,6 +232,7 @@ body > nav .selected a {
     text-decoration: none;
     width: fit-content;
     border-radius: 0.2em;
+    text-align: center;
 }
 .button:hover {
     box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.55);
