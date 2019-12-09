@@ -98,6 +98,10 @@ article {
     display: flex;
 }
 
+.row a {
+	margin-top: 25px;
+}
+
 li a:hover, h3 a:hover {
     color: #00E6FF;
 }
